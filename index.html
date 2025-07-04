@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThirdLayer Technologies - Innovating beyond the visible</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand gradient-text fw-bold fs-2" href="#home">ThirdLayer</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- <button class="btn btn-gradient px-4 py-2">Get Started</button> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <div class="hero-content">
+                        <h1 class="hero-title mb-4">
+                            <span class="text-white">Third</span><span class="gradient-text">Layer</span>
+                        </h1>
+                        
+                        <div class="hero-subtitle mb-4">
+                            <span class="text-light">Innovating </span>
+                            <span class="gradient-text fw-semibold">beyond the visible</span>
+                        </div>
+                        
+                        <p class="hero-description mb-5">
+                            We create <span class="text-primary fw-semibold">extraordinary digital experiences</span> that
+                            transform businesses and captivate audiences. Your vision, our innovation.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <button class="btn btn-gradient btn-lg me-3 mb-3">
+                                Start Your Project
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                            <button class="btn btn-outline-light btn-lg mb-3">
+                                View Portfolio
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <div class="stat-number gradient-text" data-target="10">0</div>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <div class="stat-number gradient-text" data-target="95">0</div>
+                    <p class="stat-label">Client Satisfaction</p>
+                </div>
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <div class="stat-number gradient-text" data-target="5">0</div>
+                    <p class="stat-label">Customers Served</p>
+                </div>
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <div class="stat-number gradient-text" data-target="3">0</div>
+                    <p class="stat-label">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title gradient-text mb-4">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive digital solutions that drive growth and exceed expectations</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100" data-gradient="blue-purple">
+                        <div class="service-icon blue-purple-gradient">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Full-Stack Development</h3>
+                        <p class="service-description">End-to-end web applications with cutting-edge technologies and scalable architecture</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>React/Next.js</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Node.js/Python</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Cloud Deployment</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>API Integration</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100" data-gradient="pink-orange">
+                        <div class="service-icon pink-orange-gradient">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-description">Stunning, conversion-focused designs that captivate users and drive business growth</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>User Research</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Wireframing</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Prototyping</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Design Systems</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100" data-gradient="green-teal">
+                        <div class="service-icon green-teal-gradient">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="service-title">Performance Optimization</h3>
+                        <p class="service-description">Lightning-fast websites that rank #1 on Google and convert visitors into customers</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>SEO Optimization</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Core Web Vitals</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Speed Enhancement</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100" data-gradient="violet-indigo">
+                        <div class="service-icon violet-indigo-gradient">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="service-title">E-Commerce Solutions</h3>
+                        <p class="service-description">Complete online stores that maximize sales with secure payment processing</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Shopify/WooCommerce</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Payment Integration</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Inventory Management</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Mobile Commerce</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100" data-gradient="amber-orange">
+                        <div class="service-icon amber-orange-gradient">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="service-title">Digital Marketing</h3>
+                        <p class="service-description">Data-driven marketing strategies that generate leads and grow your business</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Social Media</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Content Strategy</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>PPC Campaigns</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Email Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100" data-gradient="red-rose">
+                        <div class="service-icon red-rose-gradient">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="service-title">Brand Identity</h3>
+                        <p class="service-description">Complete brand packages that make your business unforgettable and professional</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Logo Design</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Brand Guidelines</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Marketing Materials</li>
+                            <li><i class="fas fa-sparkles text-primary me-2"></i>Brand Strategy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title gradient-text-green mb-4">Featured Projects</h2>
+                    <p class="section-subtitle">Discover some of our most successful projects that transformed businesses</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="pic/flex.png" alt="E-Commerce Platform" class="img-fluid">
+                            <div class="project-overlay blue-purple-gradient">
+                                <div class="project-links">
+                                    <a href="https://gym-management-system-oywl.onrender.com/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <!-- <a href="https://github.com/keshav6740/Gym-Management-System" target="_blank" class="project-link"><i class="fab fa-github"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Gym Management System</h3>
+                            <p class="project-description">Comprehensive platform for managing gym operations and member engagement</p>
+                            <!-- <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">JavaScript</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="pic/nexxus.png" alt="SaaS Dashboard" class="img-fluid">
+                            <div class="project-overlay purple-pink-gradient">
+                                <div class="project-links">
+                                    <a href="https://nexus-business-ai-management.vercel.app/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <!-- <a href="https://github.com/keshav6740/Nexus-Business-AI-Management" class="project-link"><i class="fab fa-github"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Nexus-Business-AI-Management</h3>
+                            <p class="project-description">Comprehensive analytics dashboard with real-time data visualization</p>
+                            <!-- <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Chart.js</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Tailwind CSS</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="pic/portfolio.png" alt="Mobile App Landing" class="img-fluid">
+                            <div class="project-overlay green-blue-gradient">
+                                <div class="project-links">
+                                    <a href="https://vatsal-birla-portfolio.lovable.app/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <!-- <a href="#" class="project-link"><i class="fab fa-github"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Personalized Portfolio</h3>
+                            <p class="project-description">A unique and interactive portfolio showcasing customers skills and projects</p>
+                            <!-- <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Animation</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">Vercel</span>
+                                <span class="tag">JavaScript</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="section-title gradient-text-purple mb-4">About ThirdLayer</h2>
+                    
+                    <div class="about-content">
+                        <p class="mb-4">
+                            We are a <span class="text-primary fw-semibold">cutting-edge web development agency</span> that
+                            specializes in creating extraordinary digital experiences. Our name "ThirdLayer" represents our
+                            commitment to going beyond the surface, beyond the obvious.
+                        </p>
+                        
+                        <p class="mb-4">
+                            From <span class="text-info fw-semibold">startups to Fortune 500 companies</span>, we help
+                            businesses establish a powerful online presence that drives growth, engagement, and revenue.
+                        </p>
+                        
+                        <p class="mb-5">
+                            Our team combines <span class="text-success fw-semibold">technical expertise with creative vision</span> to
+                            deliver websites that don't just look amazing—they perform exceptionally and convert visitors into
+                            customers.
+                        </p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="about-feature text-center">
+                                <i class="fas fa-award text-warning mb-3"></i>
+                                <h4 class="feature-title">Award Winning</h4>
+                                <p class="feature-text">Design Excellence</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="about-feature text-center">
+                                <i class="fas fa-layer-group text-primary mb-3"></i>
+                                <h4 class="feature-title">Full Service</h4>
+                                <p class="feature-text">End-to-End Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="about-visual">
+                        <div class="visual-container">
+                            <!-- <i class="fas fa-code visual-icon"></i> -->
+                            <img src="pic/logo.png" alt="ThirdLayer Logo" class="img-fluid"></a>
+                            <div class="floating-element floating-1"></div>
+                            <div class="floating-element floating-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title gradient-text-purple mb-4">Meet Our Team</h2>
+                    <p class="section-subtitle">The brilliant minds behind ThirdLayer Technologies</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="pic/keshav1.jpg" alt="Keshav Agrawal" class="img-fluid">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Keshav Agrawal</h3>
+                            <p class="team-role">Full Stack Developer & Co-Founder</p>
+                            <p class="team-bio">Expert in React, Node.js, and cloud architecture with 5+ years of experience building scalable applications.</p>
+                            
+                            <div class="team-skills mb-4">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">TypeScript</span>
+                            </div>
+                            
+                            <div class="team-social">
+                                <a href="mailto:keshavanjaniagrawal@gmail.com" class="social-link" title="Email: keshavanjaniagrawal@gmail.com"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.linkedin.com/in/keshav-agrawal-sde/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <!-- <a href="https://twitter.com/keshavagrawal" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="pic/vatsal.jpg" alt="Vatsal Birla" class="img-fluid">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Vatsal Birla</h3>
+                            <p class="team-role">Frontend Specialist & Co-Founder</p>
+                            <p class="team-bio">UI/UX expert specializing in creating beautiful, user-centric interfaces that convert visitors into customers.</p>
+                            
+                            <div class="team-skills mb-4">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Tailwind</span>
+                            </div>
+                            
+                            <div class="team-social">
+                                <a href="mailto:birla.vatsal04@gmail.com" class="social-link" title="Email: birla.vatsal04@gmail.com"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.linkedin.com/in/vatsalbirla/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="pic/rishi.jpg" alt="Rishi Plawat" class="img-fluid">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Rishi Plawat</h3>
+                            <p class="team-role">Co-Founder</p>
+                            <p class="team-bio">Backend architecture specialist with expertise in databases, APIs, and high-performance server solutions.</p>
+                            
+                            <div class="team-skills mb-4">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Redis</span>
+                            </div>
+                            
+                            <div class="team-social">
+                                <a href="mailto:rishiplawat@gmail.com" class="social-link" title="Email: rishiplawat@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/rishi-plawat/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="section-title gradient-text mb-4">Let's Create Something Amazing</h2>
+                <p class="section-subtitle">Ready to transform your business with a stunning website? Let's discuss your project.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-5">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon blue-purple-gradient">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>thirdlayer@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon purple-cyan-gradient">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+91 - 9265684017</p>
+                            <p>+91 - 7490951702</p>
+                            <p>+91 - 8076912845</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon cyan-blue-gradient">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Remote & On-site Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="contact-form-container">
+                    <!-- IMPORTANT: Replace "YOUR_UNIQUE_ID" with your Formspree form ID from formspree.io -->
+                    <form class="contact-form" action="https://formspree.io/f/mwpbzjgn" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" name="name" class="form-control custom-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" name="email" class="form-control custom-input" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input type="text" name="budget" class="form-control custom-input" placeholder="Project Budget">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <textarea name="message" class="form-control custom-input" rows="5" placeholder="Tell us about your project vision..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-gradient w-100 py-3">
+                            Send Message
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="text-center">
+                <h3 class="footer-title gradient-text mb-3">ThirdLayer Technologies</h3>
+                <p class="footer-subtitle mb-4">Innovating beyond the visible</p>
+                                
+                <div class="footer-copyright">
+                    <p>&copy; 2025 ThirdLayer Technologies. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
